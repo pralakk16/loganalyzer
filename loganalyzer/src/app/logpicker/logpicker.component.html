@@ -1,0 +1,8 @@
+<div>
+    <input type="text" name="q" [(ngModel)]="playerName" placeholder="search">
+    <input type="submit" name="btn" placeholder="Submit" (click)="onSubmit()">
+  </div>
+<div *ngFor="let item of onlyMatching">
+    <h3>{{item.rest1}} <h6>{{item.rest6}} </h6></h3>
+
+</div>
